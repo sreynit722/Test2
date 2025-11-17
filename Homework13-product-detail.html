@@ -1,0 +1,337 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Moul&family=Nokora:wght@100;300;400;700;900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Suwannaphum:wght@100;300;400;700;900&display=swap"
+        rel="stylesheet">
+  
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Kantumruy Pro", sans-serif;
+    }
+
+    /* header  */
+    header {
+        width: 100%;
+        background-color: rgb(255, 238, 236);
+        position: fixed;
+        z-index: 1;
+        margin: 0;
+        top: 0;
+        right: 0;
+        box-shadow: 1px 1px 10px silver;
+    }
+
+    .nav-bar {
+        /* background-color: blue; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+
+
+    }
+
+    .nav-list {
+        list-style-type: none;
+        display: flex;
+
+    }
+
+    .nav-list li a {
+        padding: 10px;
+        text-decoration: none;
+
+
+    }
+
+    .nav-list li a:hover {
+        color: white;
+        background: rgb(129, 105, 105);
+        border-radius: 10px;
+    }
+
+    .btn {
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .btn:hover {
+        color: white;
+        background: rgb(129, 105, 105);
+        cursor: pointer;
+    }
+
+
+    /* product section  */
+    .product-container {
+        width: 100%;
+        /* background-color: rosybrown; */
+        margin-top: 120px;
+        margin-bottom: 50px;
+    }
+
+    .product-detail {
+        width: 80%;
+        margin: auto;
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .product-detail-item {
+        padding: 20px 40px;
+        background-color: rgb(255, 238, 236);
+        border-radius: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .product-detail-item .product-img {
+        width: 400px;
+    }
+
+    .product-detail-item .product-info {
+        margin: 20px;
+    }
+
+    .product-info * {
+        margin: 10px 0px;
+    }
+
+    .text-detail {
+        line-height: 25px;
+    }
+
+    .price>b {
+        font-size: larger;
+        color: rgb(108, 7, 172);
+    }
+
+    .discount {
+        background-color: gold;
+        padding: 5px 10px;
+        border-radius: 20px;
+        color: black;
+    }
+
+    .qty {
+        width: 100px;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin-left: 10px;
+    }
+
+    .qty:focus {
+        outline: 1px solid black;
+    }
+
+
+
+
+    /* footer  */
+
+    footer {
+        padding: 10px;
+        display: flex;
+        background-color: rgb(255, 238, 236);
+        justify-content: center;
+    }
+
+    .footer-section {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-logo {
+        padding: 20px;
+
+    }
+
+    .footer-col {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        flex-wrap: wrap;
+
+    }
+
+    .item {
+        margin: 10px;
+
+    }
+
+    .item a:hover {
+        color: blue;
+
+    }
+
+    .item h4 {
+        text-transform: uppercase;
+    }
+
+    .item {
+        width: 300px;
+
+    }
+
+    .item a {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        padding: 5px;
+    }
+
+    .contact-item {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .cpy-right {
+        text-align: center;
+        margin: 5px;
+    }
+
+    @media screen and (max-width:650px) {
+        .nav-bar {
+            flex-direction: column;
+        }
+
+        .logo,
+        nav,
+        .btn-box {
+            margin-bottom: 15px;
+        }
+
+    }
+</style>
+
+<body>
+    <header>
+        <section class="nav-bar">
+            <div class="logo">
+                <a href="#"><img src="./image/logo-techshop.png" alt="logo" width="70px"></a>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="./Homework12-menu-fix.html">ទំព័រដើម</a></li>
+                    <li><a href="./Homework12-menu-fix.html">ផលិតផល</a></li>
+                    <li><a href="">អំពីយើង</a></li>
+                    <li><a href="">ទំនាក់ទំនង</a></li>
+                </ul>
+            </nav>
+            <div class="btn-box">
+                <a href="./homework9-login-form.html"><button class="btn">ចូលគណនី</button></a>
+                <a href="./Homework9-register-form.html"><button class="btn">បង្កើតគណនី</button></a>
+            </div>
+        </section>
+
+    </header>
+    <main>
+        <section class="product-container">
+            <div class="product-detail">
+                <div class="product-detail-item">
+
+                    <div class="product-img">
+                        <img src="https://imgs.search.brave.com/heRtsyloh-y2YV_odh_xkE2MMcT1GtNlFgo2-Wo9fOQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y3liZXJwb3dlcnBj/LmNvbS9pbWFnZXMv/Y3MvUEJFVDIwMTgv/RVQ5OTcyOS9tYWlu/XzQwMC5wbmc"
+                            alt="set-PC" width="100%">
+                    </div>
+
+                    <!-- 1 item  -->
+                    <div class="product-info">
+                        <h2>Set PC Gaming</h2>
+                        <p class="price"><b>$722.22</b> <span class="discount">25% off</span></p>
+
+                        <p class="text-detail">🖥️ Processor (CPU): Intel Core i7-13700K (13th Gen, 16 Cores, up to
+                            5.4GHz) <br>
+                            💾 Memory (RAM): 32GB DDR5 6000MHz <br>
+                            🎮 Graphics Card (GPU): NVIDIA GeForce RTX 4070 Ti 12GB<br>
+                            💽 Storage: 1TB NVMe SSD + 2TB HDD <br>
+                            🧩 Motherboard: ASUS TUF Gaming Z790-PLUS WIFI <br>
+                            ❄️ Cooling System: 240mm RGB Liquid Cooler <br>
+                            ⚡ Power Supply (PSU): 850W 80+ Gold <br>
+                            🖥️ Case: Mid-Tower RGB Gaming Case with tempered glass side panel<br>
+                            💿 Operating System: Windows 11 Pro 64-bit</p>
+                        <label for="">Quantity</label>
+                        <input class="qty" type="number"> <br>
+                        <button class="btn">Add to cart</button>
+                        <button class="btn">Buy more</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-section">
+            <div class="footer-logo">
+                <img src="./image/logo-techshop.png" alt="" width="150px">
+            </div>
+            <div class="footer-col">
+                <div class="item">
+                    <h4>Product</h4>
+                    <a href="">Electronic</a>
+                    <a href="">Accessories</a>
+                    <a href="">Spare part</a>
+                </div>
+
+                <div class="item">
+                    <h4>Legal</h4>
+                    <a href="">Private </a>
+                    <a href="">Term & Condition</a>
+                    <a href="">Shipping</a>
+                    <a href=""></a>
+                </div>
+
+                <div class="item">
+                    <h4>Contact</h4>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href=""> Phnom Penh</a>
+
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:sreynitpoch@gamil.com"> sreynitpoch@gamil.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+885978542397"> +885 12 345 678</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <p class="cpy-right"><i>រក្សាសិទ្ធគ្រប់យ៉ាងដោយ@nitNextIntelligentTech</i> </p>
+
+
+    <!-- icon link framework  -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
